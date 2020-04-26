@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, TextInput, View, Button, Text, FlatList } from 'react-native';
 import PrevisaoItem from './Components/PrevisaoItem';
 
 export default function App() {
