@@ -3,7 +3,6 @@ import { View, Text, StyleSheet, Image} from 'react-native';
 import Cartao from './Cartao';
 
 const PrevisaoItem = (props) => {
-
     return (
         <Cartao estilos={estilos.cartao}>
             <View style={estilos.tela}>

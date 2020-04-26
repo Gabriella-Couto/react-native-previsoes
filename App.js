@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, TextInput, View, Button, Text, FlatList } from 'react-native';
+import { StyleSheet, TextInput, View, Button, Keyboard, FlatList } from 'react-native';
 import PrevisaoItem from './Components/PrevisaoItem';
 
 export default function App() {
@@ -21,8 +21,8 @@ export default function App() {
     fetch(target)
     .then((dados) => dados.json())
     .then((dados) => {
-    setPrevisoes(dados["list"])
-    Keyboard.dismiss()
+      setPrevisoes(dados["list"])
+      Keyboard.dismiss()
     });
   }
 
